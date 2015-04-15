@@ -1,3 +1,48 @@
 * {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box;}
 body { background-color: #000;}
-.wrap {width: 100%; height: 900px; background: url('../img/background.jpg') repeat top left;}
+.wrap {width: 100%; height: 950px; background: url('../img/background.jpg') repeat top left; position: relative;}
+.wrap .gradient-tl {
+	/*width: 500px; height: 500px; 
+	background: linear-gradient(left top, #f6f6d7, transparent); 
+	background: -webkit-linear-gradient(left top, #fff 15%, transparent 85%);
+	opacity: .1;
+	background-color: transparent;*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: .3;
+}
+.wrap .gradient-br {position: absolute; bottom: 0; right: 0; opacity: .3;}
+.wrap .bg-bl {position: absolute; left: 0; bottom: 0;}
+.wrap .bg-tr {position: absolute; top: 0; right: 0;}
+/*main-content*/
+.wrap .container {width: 590px; height: 570px; position: absolute; top: 50%; margin-top: -285px; left: 50%; margin-left: -295px;}
+.wrap .container .logo {position: absolute;}
+.wrap .container ul {position: absolute; -webkit-transition: all .6s ease-in-out; transition: all .6s ease-in-out; }
+.wrap .container ul li {-webkit-transition: all .6s ease-in-out; transition: all .6s ease-in-out; transform: 50% 30%;}
+.wrap .container ul:hover {-webkit-transform: scale(1.1); transform: scale(1.1); }
+.wrap .container ul li {display: inline-block; position: absolute; background: url('../img/light.png') no-repeat 0 0; width: 95px; height: 100px; background-size: cover; }
+/*position*/
+/*90*/
+#datawrap .t1 {top: 0;}
+#datawrap .t2 {top: 80px;}
+#datawrap .t3 {top: 160px;}
+#datawrap .t4 {top: 240px;}
+#datawrap .t5 {top: 320px;}
+#datawrap .t6 {top: 400px;}
+#datawrap .t7 {top: 480px;}
+/*85  evenrow *//* +90*/
+#datawrap .even.c1 {left: 0;}
+#datawrap .even.c2 {left: 90px;}
+#datawrap .even.c3 {left: 180px;}
+#datawrap .even.c4 {left: 270px;}
+#datawrap .even.c5 {left: 360px;}
+#datawrap .even.c6 {left: 450px;}
+#datawrap .even.c7 {left: 540px;}
+/*85*//* +90*/
+#datawrap .c1 {left: 45px;}
+#datawrap .c2 {left: 135px;}
+#datawrap .c3 {left: 225px;}
+#datawrap .c4 {left: 315px;}
+#datawrap .c5 {left: 405px;}
+#datawrap .c6 {left: 495px;}
