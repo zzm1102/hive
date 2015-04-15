@@ -13,10 +13,9 @@ html, body { background-color: #000; height: 100%; font-family: "microsoft yahei
 	opacity: .3;
 }
 .wrap .gradient-br {position: absolute; bottom: 0; right: 0; opacity: .3;}
-.wrap .bg-bl {position: absolute; left: 0; bottom: 0; }
+.wrap .bg-bl {position: absolute; left: 0; bottom: 0; width: 200px; height: 200px;}
 .wrap .bg-bl img {width: 100%;}
 
-.wrap .bg-tr {position: absolute; top: 0; right: 0; }
 .wrap .bg-tr img {width: 100%;}
 
 /*hexagon*/
