@@ -19,6 +19,14 @@
 			<div class="bg-tr"><img src="img/bg_tr.png" alt="hive" /></div>
 			<!--中间区域-->
 			<div class="container" id="datawrap">
+				<!--login-->
+				<div class="login">
+					<ul>
+						<li><a href="" class="weibo"></a></li>
+						<li><a href="" class="facebook"></a></li>
+						<li><a href="" class="twitter"></a></li>
+					</ul>
+				</div>
 				<!--装饰图片-->
 				<div class="top-img decorate">
 					<ul>
@@ -95,16 +103,22 @@
 				</ul>
 			</nav>
 			<footer>
-				
+				<p class="copyright">Copyright &copy; 2015 HIVEMEDIA. All Right Reserved</p>
+				<ul>
+					<li><a href="">Terms&nbsp;&amp;&nbsp;Conditions</a></li> |
+					<li><a href="">Privacy&nbsp;Policy</a></li> |
+					<li><a href="">Shipping&nbsp;&amp;&nbsp;Return</a></li> |
+					<li><a href="">Contact us</a></li>
+				</ul>
 			</footer>
 		</div>
 		
 		<script type="text/javascript" src="js/jquery.js" ></script>
 		<script type="text/javascript">
-			$('.container ul').hover(function() {
+			$('.group-wrap ul').hover(function() {
 				$(this).css('opacity', '1').siblings('ul').css('opacity', '.5');
 			}, function() {
-				$('.container ul').css('opacity', '1')
+				$('.group-wrap ul').css('opacity', '1')
 			})
 		</script>
 	</body>
