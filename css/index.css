@@ -38,15 +38,15 @@ html, body { background-color: #000; height: 100%; font-family: "microsoft yahei
 
 
 /*main-content*/
+/*动画部分设置*/
 .wrap .container ul, .wrap nav ul, .wrap .bg-deco, footer {display: none;}
 .logoRotate {
 	-webkit-animation: logoRotate 3s linear infinite; 
 	animation: logoRotate 3s linear infinite;
 }
 
-
 /*login*/
-.container .login {position: absolute; right: -200px;}
+.container .login {position: absolute; right: -230px;}
 .container .login ul li {display: block; text-align: center;}
 .container .login ul a { background: url(../img/login.png) no-repeat; display: block; text-align: center; margin: 10px auto; float: left;}
 .container .login ul .weibo {background-position: -3px 0; width: 34px; height: 26px;}
@@ -54,7 +54,7 @@ html, body { background-color: #000; height: 100%; font-family: "microsoft yahei
 .container .login ul .twitter {background-position: -3px -89px; width: 34px; height: 26px;}
 /*end login*/
 
-.wrap .container {width: 590px; position: absolute; top: 50%; margin-top: -400px; left: 50%; margin-left: -340px;}
+.wrap .container {width: 590px; position: absolute; top: 50%; margin-top: -350px; left: 50%; margin-left: -340px;}
 .wrap .container .logo {position: absolute; width: 117px; height: 119px; padding-top: 13px; padding-left: 1px; text-align: center;}
 .wrap .container .decorate ul, .wrap .container .group-wrap ul {position: absolute; -webkit-transition: all .3s ease-in-out; transition: all .3s ease-in-out; z-index: 2; }
 .wrap .container .group-wrap ul {cursor: pointer;}
@@ -113,8 +113,8 @@ html, body { background-color: #000; height: 100%; font-family: "microsoft yahei
 #datawrap .c6 {left: 495px;}
 
 /*装饰区图片定位*/
-.wrap .container .top-img ul {left: -70px; top: 120px;}
-.wrap .container .bottom-img ul {right: -100px; top: 500px;}
+.wrap .container .top-img ul {left: -60px; top: 120px;}
+.wrap .container .bottom-img ul {right: -170px; top: 490px; z-index: 11;}
 
 #datawrap .decorate .t-1 {top: -49px;}
 #datawrap .decorate .t0 {top: 0;}
@@ -143,9 +143,27 @@ html, body { background-color: #000; height: 100%; font-family: "microsoft yahei
 .wrap footer ul li a {padding: 0 10px; color: #8fc31f;}
 
 
+/*弹窗区域*/
+.popup-wrap {
+	width: 836px; height: 520px; 
+	background-color: rgba(70,70,70,.9); 
+	position: absolute; left: 50%; top: 50%; 
+	margin-left: -418px; margin-top: -300px; 
+	z-index: 10;
+	box-shadow: 8px 15px 25px #222;
+}
+.popup-wrap .sub-nav {width: 300px; height: 200px; background-color: rgba(255,255,255,.3); position: absolute; top: -100px; left: -100px;}
+.popup-wrap .close-btn {width: 61px; height: 52px; position: absolute; top: -25px; right: -5px;}
+.popup-wrap .sub-title {width: 100%; position: absolute; top: -140px; text-align: center; }
+.popup-wrap .sub-title i {display: block; background: url(../img/sun_title.png) no-repeat top left; width: 148px; height: 77px; margin: 0 auto;}
 
+/*.popup-wrap .id-position {display: none;}*/
+.popup-wrap .id-part h3 {background: url(../img/third_nav.png) no-repeat; width: 145px; height: 35px;}
+.popup-wrap .id-position h3 {background-position: -1px -1px; margin-top: 85px; margin-left: 50px;}
+.popup-wrap .id-position ul {color: #fff; margin: 20px 70px; font-size: 16px;}
+.popup-wrap .id-position ul li {list-style: disc; text-indent: 30px; line-height: 1.5; margin-top: 40px;}
 
-
+.popup-wrap .id-member h3 {background-position: -1px -45px; margin-top: 85px; margin-left: 50px; display: none;}
 
 
 
