@@ -38,6 +38,13 @@ html, body { background-color: #000; height: 100%; font-family: "microsoft yahei
 
 
 /*main-content*/
+.wrap .container ul, .wrap nav ul, .wrap .bg-deco, footer {display: none;}
+.logoRotate {
+	-webkit-animation: logoRotate 3s linear infinite; 
+	animation: logoRotate 3s linear infinite;
+}
+
+
 /*login*/
 .container .login {position: absolute; right: -200px;}
 .container .login ul li {display: block; text-align: center;}
@@ -196,7 +203,12 @@ html, body { background-color: #000; height: 100%; font-family: "microsoft yahei
 	50% {opacity: .6; -webkit-transform: translate(170px,100px) rotate(90deg) scale(.7);}
 	70% {opacity: .4; -webkit-transform: translate(20px,130px) rotate(180deg) scale(.6);}
 	85% {opacity: .2; -webkit-transform: translate(-40px,50px) rotate(180deg) scale(.5);}
-	100% {opacity: 0;-webkit-transform: translate(0,0) scale(.6) rotate(180deg);}
+	100% {opacity: 0;-webkit-transform: translate(0,0) scale(.4) rotate(180deg);}
+}
+
+@-webkit-keyframes logoRotate{
+	0% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(360deg);}
 }
 
 
