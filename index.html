@@ -5,6 +5,7 @@
 		<title>Hive-深圳蜂群传媒有限公司</title>
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 	</head>
 	<body>
@@ -95,21 +96,28 @@
 			<!--navigation-->
 			<nav>
 				<ul>
-					<li><a href=""><i></i><h3>身份证</h3></a></li>
-					<li><a href=""><i></i><h3>朋友圈</h3></a></li>
-					<li><a href=""><i></i><h3>履历表</h3></a></li>
-					<li><a href=""><i></i><h3>技能表</h3></a></li>
-					<li><a href=""><i></i><h3>联系我</h3></a></li>
+					<li id="ID"><a href="javascript:;"><i></i><h3>身份证</h3></a></li>
+					<li id=""><a href=""><i></i><h3>朋友圈</h3></a></li>
+					<li id=""><a href=""><i></i><h3>履历表</h3></a></li>
+					<li id=""><a href=""><i></i><h3>技能表</h3></a></li>
+					<li id=""><a href=""><i></i><h3>联系我</h3></a></li>
 				</ul>
 			</nav>
 			<!--弹窗区域-->
-			<div class="popup-wrap">
-				<div class="sub-nav"></div>
+			<div class="popup-wrap hide">
+				<div class="sub-nav">
+					<img src="img/id_part.png" alt="" />
+					<ul>
+						<li class="environment3"><img src="img/id-environment.png" alt="environment" /></li>
+						<li class="position3"><img src="img/id-position.png" alt="position" /></li>
+						<li class="member3"><img src="img/members.png" alt="members" /></li>
+					</ul>
+				</div>
 				<div class="close-btn"><img src="img/close_btn.png"/></div>
 				<div class="sub-title"><i></i></div>
 				
 				<!--content-->
-				<div class="id-position id-part">
+				<div class="id-position id-part hide">
 					<h3></h3>
 					<ul>
 						<li>简单来说，我们是由一群人气爆棚、创意逆天、三观端正、逼格很高的全明星传媒人阵容组成的互动营销界梦之队，成员包括营销、创意、技术和媒介等各界精英，以客户的社会化营销需求为中心，全方位满足客户多平台资源无缝整合策略、创意、技术与数字媒体购买、打造品牌影响力的需求。</li>
@@ -117,10 +125,51 @@
 						<li>我们的目标是：成为中国最有影响力的互动营销公司.</li>
 					</ul>
 				</div>
-				<div class="id-member id-part">
+				
+				<div class="id-member id-part hide">
 					<h3></h3>
+					<p>公司由资深4A总监及社交媒体知名KOL组成，专业与创意并重，根据客户要求，将品牌元素和社会文化结合在一起，从KPI到线下流量双方面实现质的飞跃</p>
+					<div class="member-wrap">
+						<div class="member-block">
+							<i class="shouge"></i>
+							<h4>ID：留几手</h4>
+							<p>粉丝：1001万 <br /> 打分艺术家</p>
+						</div>
+						<div class="member-block">
+							<i class="jipinfei"></i>
+							<h4>ID：极品霏</h4>
+							<p>粉丝：1001万 <br /> 打分艺术家</p>
+						</div>
+						<div class="member-block">
+							<i class="liuneng"></i>
+							<h4>ID：刘能叔</h4>
+							<p>粉丝：1001万 <br /> 打分艺术家</p>
+						</div>
+						<div class="member-block">
+							<i class="guo"></i>
+							<h4>4A公司资<br />深创意人</h4>
+							<p>Mr.郭</p>
+						</div>
+					</div>
 				</div>
-				<div class="id-environment id-part"></div>
+				
+				<div class="id-environment id-part hide">
+					<!--slider-->
+					<div class="device">
+						<a class="arrow-left arrow" href="#"></a> 
+						<a class="arrow-right arrow" href="#"></a>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"> <img src="img/environment.jpg"></div>
+								<div class="swiper-slide"> <img src="img/environment.jpg"></div>
+								<div class="swiper-slide"> <img src="img/environment.jpg"></div>
+								<div class="swiper-slide"> <img src="img/environment.jpg"></div>
+								<div class="swiper-slide"> <img src="img/environment.jpg"></div>
+							</div>
+						</div>
+						<div class="pagination"></div>
+					</div><!--end slider-->
+				</div>
 				<!--content end-->
 			</div>
 			<!--弹窗区域end-->			
@@ -136,7 +185,9 @@
 			</footer>
 		</div>
 		
-		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+		<script src="js/idangerous.swiper-2.1.min.js" type="text/javascript"></script>
+		<script src="js/index.js" type="text/javascript"></script>
 		<script type="text/javascript">
 			//首页动画
 //			setTimeout(function() {
