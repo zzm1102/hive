@@ -72,8 +72,11 @@ html, body { background-color: #000; height: 100%; font-family: "microsoft yahei
 	padding-left: 1px;
 	text-align: center;
 }
-.wrap .container .group-wrap ul li span {background: url('../img/eg_img.png') no-repeat top left; width: 83px; height: 93px; display: block; margin: 0 auto;}
+.wrap .container .group-wrap ul li span {background: url('../img/index-icon.png') no-repeat; width: 83px; height: 93px; display: block; margin: 0 auto;}
 .wrap .container .group-wrap ul:hover li { background: url('../img/light.png') no-repeat 0 0;}
+/*填充图片*/
+.wrap .container .group-wrap .group1 .aa span {background-position: -3px -8px;}
+.wrap .container .group-wrap .group1 .bb span {background-position: -88px -8px;}  
 
 /*position*/
 .wrap .container ul.group1 {left: 450px; top: 240px;}
@@ -155,7 +158,7 @@ html, body { background-color: #000; height: 100%; font-family: "microsoft yahei
 	box-shadow: 8px 15px 25px #222;
 	/*display: none;*/
 }
-.popup-wrap .sub-nav { position: absolute; top: -215px; left: -180px;}
+.popup-wrap .sub-nav { position: absolute; top: -215px; left: -180px; z-index: 3;}
 .popup-wrap .sub-nav ul li {position: absolute;}
 .popup-wrap .sub-nav ul li.environment3 {left: 87px; top: 173px;}
 .popup-wrap .sub-nav ul li.member3 {left: 145px; top: 50px;}
