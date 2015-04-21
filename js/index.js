@@ -14,15 +14,55 @@ $(function($){
 	    e.preventDefault()
 	    mySwiper.swipeNext()
 	})
+	//首页导航换字
+	$('#nav li').hover(function() {
+		var chinese = $(this).data('ch');
+		$(this).find('h3').html(chinese)
+	}, function() {
+		var english = $(this).data('en');
+		$(this).find('h3').html(english)
+	})
 	
 	// 导航
 	$('.close-btn').on('click', function() {
 		$('.popup-wrap').fadeOut(500);
+//		$('.sub-nav.id-sub').hide();
+//		$('.sub-nav.contact-sub').hide();
+	$('.popup-wrap').children().hide();
 	})
-		//身份证
-	$('.group-wrap .group1, #ID').on('click', function() {
+	//---身份证
+	$('.group-wrap .group1, #about').on('click', function() {
 		$('.popup-wrap').fadeIn(500);
+		$('.close-btn').fadeIn(500);
 		$('.popup-wrap .id-position').fadeIn(500);
+		$('.sub-nav.id-sub').fadeIn(500);
+	})
+	
+	$('.sub-nav ul').find('li').hover(function() {
+		$(this).stop().animate({'opacity': '1'},100).siblings('li').animate({'opacity': '.3'},100)
+	})
+	$('.sub-nav .environment3').on('click', function() {
+		$('.id-environment').fadeIn(500);
+		$('.id-member').hide();
+		$('.id-position').hide();
+	})
+	$('.sub-nav .member3').on('click', function() {
+		$('.id-member').fadeIn(500);
+		$('.id-environment').hide();
+		$('.id-position').hide();
+	})
+	$('.sub-nav .position3').on('click', function() {
+		$('.id-position').fadeIn(500);
+		$('.id-member').hide();
+		$('.id-environment').hide();
+	})
+	
+	//---联系我
+	$('.group-wrap .group5, #contact').on('click', function() {
+		$('.popup-wrap').fadeIn(500);
+		$('.close-btn').fadeIn(500);
+		$('.popup-wrap .contact-part').fadeIn(500);
+		$('.sub-nav.contact-sub').fadeIn(500);
 	})
 	
 }(jQuery));
