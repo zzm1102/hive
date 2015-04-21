@@ -50,7 +50,7 @@
 				<div class="logo t4 even c4 logoRotate" id="logo"><img src="img/logo2.png" alt="" /></div>
 				<!--分块区域-->
 				<div class="group-wrap">
-					<ul class="group1">
+					<ul class="group1" data-en="ABOUT">
 						<li class="t-2 even c1 aa"><span></span></li>
 						<li class="t-1 c-2 bb"><span></span></li>
 						<li class="t-1 c-1 cc"><span></span></li>
@@ -58,7 +58,7 @@
 						<li class="t1 even c-1 ee"><span></span></li>
 						<li class="t1 even c1 ff"><span></span></li>
 					</ul>
-					<ul class="group2">
+					<ul class="group2" data-en="CLIENT">
 						<li class="t-2 c-2 aa"><span></span></li>
 						<li class="t-2 c-1 bb"><span></span></li>
 						<li class="t-1 even c-2 cc"><span></span></li>
@@ -66,7 +66,7 @@
 						<li class="t-1 even c1 ee"><span></span></li>
 						<li class="t1 c-2 ff"><span></span></li>
 					</ul>
-					<ul class="group3">
+					<ul class="group3" data-en="WORKS">
 						<li class="t-2 c-2 aa"><span></span></li>
 						<li class="t-2 c-1 bb"><span></span></li>
 						<li class="t-1 even c-2 cc"><span></span></li>
@@ -74,7 +74,7 @@
 						<li class="t-1 even c1 ee"><span></span></li>
 						<li class="t1 c-1 ff"><span></span></li>
 					</ul>
-					<ul class="group4">
+					<ul class="group4" data-en="TECHNIQUE">
 						<li class="t-1 c-1 aa"><span></span></li>
 						<li class="t1 even c-2 bb"><span></span></li>
 						<li class="t1 even c-1 cc"><span></span></li>
@@ -82,7 +82,7 @@
 						<li class="t2 c-2 ee"><span></span></li>
 						<li class="t2 c-1 ff"><span></span></li>
 					</ul>
-					<ul class="group5">
+					<ul class="group5" data-en="CONTACT">
 						<li class="t-1 c-2 aa"><span></span></li>
 						<li class="t-1 c-1 bb"><span></span></li>
 						<li class="t-1 c1 cc"><span></span></li>
@@ -105,87 +105,152 @@
 			</nav>
 			<!--弹窗区域-->
 			<div class="popup-wrap hide">
-				<!--二级导航-->
-				<div class="sub-nav id-sub hide">
-					<img src="img/id_part.png" alt="" />
-					<ul>
-						<li class="environment3"><img src="img/id-environment.png" alt="environment" /></li>
-						<li class="position3"><img src="img/id-position.png" alt="position" /></li>
-						<li class="member3"><img src="img/members.png" alt="members" /></li>
-					</ul>
-				</div>
-				
-				<div class="sub-nav contact-sub hide">
-					<img src="img/contact_part.png" alt="" />
-				</div>
-				<!--二级导航 end-->
 				<div class="close-btn"><img src="img/close_btn.png"/></div>
-				<div class="sub-title"><i></i></div>
-				
-				<!--content-->
-				<!------id-part-->
-				<div class="id-position id-part hide">
-					<h3></h3>
-					<ul>
-						<li>简单来说，我们是由一群人气爆棚、创意逆天、三观端正、逼格很高的全明星传媒人阵容组成的互动营销界梦之队，成员包括营销、创意、技术和媒介等各界精英，以客户的社会化营销需求为中心，全方位满足客户多平台资源无缝整合策略、创意、技术与数字媒体购买、打造品牌影响力的需求。</li>
-						<li>成立于2014年， 吃着火锅唱着歌就用一年完成了普通公司三年的客户积累，BAT三巨头什么的都合作过，随便写一个标题扔到互联网里都能影响创业板走势，但是我们还是保持着贵族般华丽的低调，嘘，不要声张，把你的问题放心交给我们就好。</li>
-						<li>我们的目标是：成为中国最有影响力的互动营销公司.</li>
-					</ul>
-				</div>
-				
-				<div class="id-member id-part hide">
-					<h3></h3>
-					<p>公司由资深4A总监及社交媒体知名KOL组成，专业与创意并重，根据客户要求，将品牌元素和社会文化结合在一起，从KPI到线下流量双方面实现质的飞跃</p>
-					<div class="member-wrap">
-						<div class="member-block">
-							<i class="shouge"></i>
-							<h4>ID：留几手</h4>
-							<p>粉丝：1001万 <br /> 打分艺术家</p>
-						</div>
-						<div class="member-block">
-							<i class="jipinfei"></i>
-							<h4>ID：极品霏</h4>
-							<p>粉丝：1001万 <br /> 打分艺术家</p>
-						</div>
-						<div class="member-block">
-							<i class="liuneng"></i>
-							<h4>ID：刘能叔</h4>
-							<p>粉丝：1001万 <br /> 打分艺术家</p>
-						</div>
-						<div class="member-block">
-							<i class="guo"></i>
-							<h4>4A公司资<br />深创意人</h4>
-							<p>Mr.郭</p>
-						</div>
+				<div class="sub-title" id="sub-title"><i></i></div>
+				<!--切换部分-->
+				<div class="windows">
+					<!--二级导航-->
+					<div class="sub-nav id-sub hide">
+						<img src="img/id_part.png" alt="" />
+						<ul>
+							<li class="environment3"><img src="img/id-environment.png" alt="environment" /></li>
+							<li class="position3"><img src="img/id-position.png" alt="position" /></li>
+							<li class="member3"><img src="img/members.png" alt="members" /></li>
+						</ul>
 					</div>
-				</div>
-				
-				<div class="id-environment id-part hide">
-					<!--slider-->
-					<div class="device">
-						<a class="arrow-left arrow" href="#"></a> 
-						<a class="arrow-right arrow" href="#"></a>
-						<div class="swiper-container">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide"> <img src="img/environment.jpg"></div>
-								<div class="swiper-slide"> <img src="img/environment.jpg"></div>
-								<div class="swiper-slide"> <img src="img/environment.jpg"></div>
-								<div class="swiper-slide"> <img src="img/environment.jpg"></div>
-								<div class="swiper-slide"> <img src="img/environment.jpg"></div>
+					
+					<div class="sub-nav tech-sub">
+						<img src="img/tech_part.png" alt="" />
+						<ul>
+							<li class="zhihu"><a href="#zhihu"></a></li>
+							<li class="weibo"><a href="#weibo"></a></li>
+							<li class="douban"><a href="#douban"></a></li>
+							<li class="weixin"><a href="#weixin"></a></li>
+							<li class="menhu"><a href="#menhu"></a></li>
+							<li class="zimeiti"><a href="#zimeiti"></a></li>
+						</ul>
+					</div>
+					
+					<div class="sub-nav contact-sub hide">
+						<img src="img/contact_part.png" alt="" />
+					</div>
+					<!--二级导航 end-->
+					
+					
+					<!--content-->
+					<!------id-part-->
+					<div class="id-position id-part hide">
+						<h3></h3>
+						<ul>
+							<li>简单来说，我们是由一群人气爆棚、创意逆天、三观端正、逼格很高的全明星传媒人阵容组成的互动营销界梦之队，成员包括营销、创意、技术和媒介等各界精英，以客户的社会化营销需求为中心，全方位满足客户多平台资源无缝整合策略、创意、技术与数字媒体购买、打造品牌影响力的需求。</li>
+							<li>成立于2014年， 吃着火锅唱着歌就用一年完成了普通公司三年的客户积累，BAT三巨头什么的都合作过，随便写一个标题扔到互联网里都能影响创业板走势，但是我们还是保持着贵族般华丽的低调，嘘，不要声张，把你的问题放心交给我们就好。</li>
+							<li>我们的目标是：成为中国最有影响力的互动营销公司.</li>
+						</ul>
+					</div>
+					
+					<div class="id-member id-part hide">
+						<h3></h3>
+						<p>公司由资深4A总监及社交媒体知名KOL组成，专业与创意并重，根据客户要求，将品牌元素和社会文化结合在一起，从KPI到线下流量双方面实现质的飞跃</p>
+						<div class="member-wrap">
+							<div class="member-block">
+								<i class="shouge"></i>
+								<h4>ID：留几手</h4>
+								<p>粉丝：1001万 <br /> 打分艺术家</p>
+							</div>
+							<div class="member-block">
+								<i class="jipinfei"></i>
+								<h4>ID：极品霏</h4>
+								<p>粉丝：1001万 <br /> 打分艺术家</p>
+							</div>
+							<div class="member-block">
+								<i class="liuneng"></i>
+								<h4>ID：刘能叔</h4>
+								<p>粉丝：1001万 <br /> 打分艺术家</p>
+							</div>
+							<div class="member-block">
+								<i class="guo"></i>
+								<h4>4A公司资<br />深创意人</h4>
+								<p>Mr.郭</p>
 							</div>
 						</div>
-						<div class="pagination"></div>
-					</div><!--end slider-->
-				</div>
-				
-				<!------contact-part-->
-				<div class="contact-part hide">
-					<img src="img/map.png" alt="address" />
-					<p>
-						地址：深圳市南山区科兴科学园B3 - 1306 <br />
-						电话：0755-85290580 <br />
-						邮箱：team@fengqun.net
-					</p>
+					</div>
+					
+					<div class="id-environment id-part hide">
+						<!--slider-->
+						<div class="device">
+							<a class="arrow-left arrow" href="#"></a> 
+							<a class="arrow-right arrow" href="#"></a>
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"> <img src="img/environment.jpg"></div>
+									<div class="swiper-slide"> <img src="img/environment.jpg"></div>
+									<div class="swiper-slide"> <img src="img/environment.jpg"></div>
+									<div class="swiper-slide"> <img src="img/environment.jpg"></div>
+									<div class="swiper-slide"> <img src="img/environment.jpg"></div>
+								</div>
+							</div>
+							<div class="pagination"></div>
+						</div><!--end slider-->
+					</div>
+					
+					<!------tech-part-->
+					<div class="tech-part">
+						<article id="zhihu">
+							<h2><i class="zhihu"></i>知乎</h2>
+							<p>和意见领袖合作，根据企业需求对企业进行正向传播，并制定相应传播计划， 通过回答问题与自问自答等形式进行产品推广与商家形象的建立等业务。</p>
+							<img src="img/images/zhihu1.jpg" alt="" />
+							<img src="img/images/zhihu1.jpg" alt="" />
+						</article>
+						
+						<article id="weibo">
+							<h2><i class="weibo"></i>微博</h2>
+							<p>针对客户要求制定企业官微营销方案。<br />
+								提供创意长微博制作，漫画广告，品牌植入等服务，拥有@留几手，@极品霏 等独家大v资源，擅长企业微博运营。</p>
+							<img src="img/images/weibo1.png" alt="" />
+							<img src="img/images/weibo2.png" alt="" />
+						</article>
+						
+						<article id="douban">
+							<h2><i class="douban"></i>豆瓣</h2>
+							<p>拥有留一手，福根儿等上百个豆瓣意见领袖及热门小组等各类资源，为客户提供植入营销，软文撰写等服务。</p>
+							<img src="img/images/douban.jpg" alt="" />
+						</article>
+						
+						<article id="weixin">
+							<h2><i class="weixin"></i>微信</h2>
+							<p>为客户量身定制微信营销方案。<br />
+								拥有数百个微信大号资源，提供软文撰写，新闻稿撰写，H5设计制作，微网页设计等服务，提供企业公众号的运营服务。</p>
+							<img src="img/images/weixin1.jpg" alt="" />
+							<img src="img/images/weixin2.jpg" alt="" />
+							<img src="img/images/weixin3.jpg" alt="" />
+						</article>
+						
+						<article id="menhu">
+							<h2><i class="menhu"></i> <br /> <br />门户</h2>
+							<p>结合自身传播方案，与新浪，搜狐，搜狐、网易、腾讯、凤凰、百度等知名门户进行合作，以最优惠价格发布企业软文与广告。</p>
+							<img src="img/images/menhu1.jpg" alt="" />
+							<img src="img/images/menhu2.jpg" alt="" />
+							<img src="img/images/menhu3.jpg" alt="" />
+						</article>
+						
+						<article id="zimeiti">
+							<h2><i class="zimeiti"></i> <br /> <br />自媒体</h2>
+							<p>与广告门，虎嗅网、36氪、等业界知名网站合作，建立企业良好形象，与开八，青龙老贼等知名公共账号合作，针对品牌特别进行传播。让业界听到你的声音。</p>
+							<img src="img/images/zimeiti1.jpg" alt="" />
+							<img src="img/images/zimeiti2.jpg" alt="" />
+							<img src="img/images/zimeiti3.jpg" alt="" />
+						</article>
+					</div>
+					
+					<!------contact-part-->
+					<div class="contact-part hide">
+						<img src="img/map.png" alt="address" />
+						<p>
+							地址：深圳市南山区科兴科学园B3 - 1306 <br />
+							电话：0755-85290580 <br />
+							邮箱：team@fengqun.net
+						</p>
+					</div>
 				</div>
 				
 				<!--content end-->

@@ -24,17 +24,21 @@ $(function($){
 	})
 	
 	// 导航
+	var name;
 	$('.close-btn').on('click', function() {
 		$('.popup-wrap').fadeOut(500);
-//		$('.sub-nav.id-sub').hide();
-//		$('.sub-nav.contact-sub').hide();
-	$('.popup-wrap').children().hide();
+		$('.popup-wrap .windows').children().hide();
+		$('#sub-title').removeClass();
 	})
+	$('.group-wrap ul, nav li').on('click', function() {
+		name = $(this).data('en').toLowerCase();
+		$('.popup-wrap').fadeIn(500);
+		$('#sub-title').removeClass().addClass(name);
+	})
+	
 	//---身份证
 	$('.group-wrap .group1, #about').on('click', function() {
-		$('.popup-wrap').fadeIn(500);
-		$('.close-btn').fadeIn(500);
-		$('.popup-wrap .id-position').fadeIn(500);
+		$('.popup-wrap .id-position').fadeIn(500).siblings('div').hide();
 		$('.sub-nav.id-sub').fadeIn(500);
 	})
 	
@@ -57,11 +61,15 @@ $(function($){
 		$('.id-environment').hide();
 	})
 	
+	//---技能表
+	$('.group-wrap .group4, #tech').on('click', function() {
+		$('.popup-wrap .tech-part').fadeIn(500).siblings('div').hide();
+		$('.sub-nav.tech-sub').fadeIn(500);
+	})
+	
 	//---联系我
 	$('.group-wrap .group5, #contact').on('click', function() {
-		$('.popup-wrap').fadeIn(500);
-		$('.close-btn').fadeIn(500);
-		$('.popup-wrap .contact-part').fadeIn(500);
+		$('.popup-wrap .contact-part').fadeIn(500).siblings('div').hide();
 		$('.sub-nav.contact-sub').fadeIn(500);
 	})
 	
