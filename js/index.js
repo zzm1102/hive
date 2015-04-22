@@ -29,11 +29,13 @@ $(function($){
 		$('.popup-wrap').fadeOut(500);
 		$('.popup-wrap .windows').children().hide();
 		$('#sub-title').removeClass();
+		$('.popup-wrap').removeClass('white');
 	})
 	$('.group-wrap ul, nav li').on('click', function() {
 		name = $(this).data('en').toLowerCase();
 		$('.popup-wrap').fadeIn(500);
 		$('#sub-title').removeClass().addClass(name);
+		$('.popup-wrap').removeClass('white');
 	})
 	
 	//---身份证
@@ -65,6 +67,7 @@ $(function($){
 	$('.group-wrap .group4, #tech').on('click', function() {
 		$('.popup-wrap .tech-part').fadeIn(500).siblings('div').hide();
 		$('.sub-nav.tech-sub').fadeIn(500);
+		$('.popup-wrap').addClass('white');
 	})
 	
 	//---联系我

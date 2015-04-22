@@ -57,7 +57,8 @@ html, body { background-color: #000; height: 100%; font-family: "microsoft yahei
 /*end login*/
 
 .wrap .container {width: 590px; position: absolute; top: 50%; margin-top: -350px; left: 50%; margin-left: -340px;}
-.wrap .container .logo {position: absolute; width: 117px; height: 119px; padding-top: 13px; padding-left: 1px; text-align: center;}
+.wrap .container .logo {position: absolute; width: 117px; height: 119px; padding-top: 13px; padding-left: 1px; text-align: center; z-index: 4;}
+.wrap .container .group-wrap {left: 0px; top: 0px; position: absolute; width: 615px; height: 595px; }
 .wrap .container .decorate ul, .wrap .container .group-wrap ul {position: absolute; -webkit-transition: all .3s ease-in-out; transition: all .3s ease-in-out; z-index: 2; }
 .wrap .container .group-wrap ul {cursor: pointer;}
 .wrap .container .decorate ul li, .wrap .container .group-wrap ul li {-webkit-transition: all .3s ease-in-out; transition: all .3s ease-in-out; display: inline-block; position: absolute; }
@@ -202,12 +203,15 @@ html, body { background-color: #000; height: 100%; font-family: "microsoft yahei
 	box-shadow: 8px 15px 25px #222;
 	/*display: none;*/
 }
+.popup-wrap.white {background-color: #fff;}
+
 .popup-wrap .sub-nav { position: absolute; top: -215px; left: -180px; z-index: 3;}
 .popup-wrap .sub-nav ul li {position: absolute; cursor: pointer;}
 .popup-wrap .sub-nav ul li.environment3 {left: 87px; top: 173px;}
 .popup-wrap .sub-nav ul li.member3 {left: 145px; top: 50px;}
 .popup-wrap .sub-nav ul li.position3 {right: 95px; top: 70px;}
 
+.popup-wrap .sub-nav.client-sub {top: -270px; left: -340px; }
 .popup-wrap .sub-nav.tech-sub {top: -270px; left: -175px; }
 .popup-wrap .tech-sub ul { position: absolute; top: 0; left: 0;}
 .popup-wrap .tech-sub ul li {position: absolute;}
@@ -231,7 +235,8 @@ html, body { background-color: #000; height: 100%; font-family: "microsoft yahei
 
 .popup-wrap .id-part {margin: 85px 50px;}
 .popup-wrap .id-part h3 {background: url(../img/third_nav.png) no-repeat; width: 145px; height: 35px;}
-.popup-wrap .tech-part {margin: 130px 0 30px; height: 360px; overflow-y: scroll; color: #fff;}
+.popup-wrap .client-part {margin: 85px auto; text-align: center;}
+.popup-wrap .tech-part {margin: 95px 0 30px; height: 360px; overflow-y: scroll; color: #555;}
 .popup-wrap .tech-part article {margin: 0 45px; padding: 40px 0; border-bottom: 1px solid #8fc31f;}
 .popup-wrap .tech-part h2 {font-size: 26px; font-family: "微软雅黑"; font-weight: lighter; letter-spacing: 2px;}
 .popup-wrap .tech-part h2 i {background: url(../img/tech_logo.png) no-repeat; display: inline-block; margin-right: 20px; vertical-align: bottom;}
@@ -337,7 +342,15 @@ html, body { background-color: #000; height: 100%; font-family: "microsoft yahei
 }
 .run {
 	-webkit-animation: run 15s ease infinite; 
-	animation: run 5s ease infinite;
+	animation: run 15s ease infinite;
+}
+.scaleChange {
+	-webkit-animation: scaleChange 1s; 
+	animation: scaleChange 1s;
+	/*-webkit-animation-timing-function: cubic-bezier(.71,1.55,.83,.29);
+	animation-timing-function: cubic-bezier(.71,1.55,.83,.29);*/
+	/*-webkit-animation-delay: 3s;
+	animation-delay: 3s;*/
 }
 
 @-webkit-keyframes l-rotate{
@@ -381,7 +394,16 @@ html, body { background-color: #000; height: 100%; font-family: "microsoft yahei
 	100% {-webkit-transform: rotate(360deg);}
 }
 
-
+@-webkit-keyframes scaleChange {
+	0% {-webkit-transform: scale(0); opacity: 0;}
+	/*50% {-webkit-transform: scale(0); opacity: 0;}*/
+	30% {-webkit-transform: scale(.7); opacity: 1;}
+	/*75% {-webkit-transform: scale(.4); opacity: .6;}
+	80% {-webkit-transform: scale(.8); opacity: 1;}*/
+	70% {-webkit-transform: scale(.3); opacity: .6;}
+	80% {-webkit-transform: scale(1.5); opacity: 1;}
+	100% {-webkit-transform: scale(1); opacity: 1;}
+}
 
 
 
