@@ -43,8 +43,8 @@ html, body { background-color: #000; height: 100%; font-family: "microsoft yahei
 /*动画部分设置*/
 .wrap .container ul, .wrap nav ul, .wrap .bg-deco, footer {display: none;}
 .logoRotate {
-	-webkit-animation: logoRotate 3s linear infinite; 
-	animation: logoRotate 3s linear infinite;
+	-webkit-animation: logoRotate 2s linear infinite; 
+	animation: logoRotate 2s linear infinite;
 }
 
 /*login*/

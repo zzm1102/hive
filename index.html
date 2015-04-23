@@ -49,7 +49,7 @@
 				<!--logo-->
 				<div class="logo t4 even c4 logoRotate" id="logo"><img src="img/logo3.png" alt="" /></div>
 				<!--分块区域-->
-				<div class="group-wrap scaleChange hide">
+				<div class="group-wrap hide">
 					<ul class="group1" data-en="ABOUT">
 						<li class="t-2 even c1 aa"><span></span></li>
 						<li class="t-1 c-2 bb"><span></span></li>
@@ -423,30 +423,30 @@
 //					'top': '240px'
 //				},2000)
 //			},2000);
-//			setTimeout(function() {
-				$('.container ul.group1').fadeIn(1500)
-//			},2000)
-//			setTimeout(function() {
-				$('.container ul.group2').fadeIn(1500);
+			setTimeout(function() {
+				$('.container ul.group1').fadeIn(500)
+			},700)
+			setTimeout(function() {
+				$('.container ul.group2').fadeIn(500);
 				$('.wrap .bg-deco').fadeIn(2000);
-//			},3500)
-//			setTimeout(function() {
-				$('.container ul.group3').fadeIn(1500); 
+			},1400)
+			setTimeout(function() {
+				$('.container ul.group3').fadeIn(500); 
 				$('.container .decorate ul').fadeIn(2000);
-//			},4500)
-//			setTimeout(function() {
-				$('.container ul.group4').fadeIn(1500);
+			},4200)
+			setTimeout(function() {
+				$('.container ul.group4').fadeIn(500);
 				$('.wrap nav ul').fadeIn(2000);
-//			},5500)
-//			setTimeout(function() {
-				$('.container ul.group5').fadeIn(1500);
+			},4900)
+			setTimeout(function() {
+				$('.container ul.group5').fadeIn(500);
 				$('footer, .container .login ul').fadeIn(2000);
-//			},6500)
+			},6500)
 			//logo
 			setTimeout(function() {
 				$('#logo').removeClass('logoRotate');
 				$('.group-wrap').removeClass('hide');
-			},1000)
+			},2000)
 		
 			$('.group-wrap ul').hover(function() {
 				$(this).css('opacity', '1').siblings('ul').css('opacity', '.3');
