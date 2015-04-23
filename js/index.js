@@ -63,6 +63,34 @@ $(function($){
 		$('.id-environment').hide();
 	})
 	
+	//---朋友圈
+	$('.group-wrap .group2, #client').on('click', function() {
+		$('.popup-wrap .client-part').fadeIn(500).siblings('div').hide();
+		$('.sub-nav.client-sub').fadeIn(500);
+	})
+	
+	//---履历表
+	$('.group-wrap .group3, #works').on('click', function() {
+		$('.popup-wrap .works-part').fadeIn(500).siblings('div').hide();
+		$('.sub-nav.works-sub').fadeIn(500);
+	})
+	
+	$('.sub-nav .operate').on('click', function() {
+		$('.works-operating').fadeIn(500);
+		$('.works-marketing').hide();
+		$('.works-creative').hide();
+	})
+	$('.sub-nav .marketing').on('click', function() {
+		$('.works-marketing').fadeIn(500);
+		$('.works-operating').hide();
+		$('.works-creative').hide();
+	})
+	$('.sub-nav .creative').on('click', function() {
+		$('.works-creative').fadeIn(500);
+		$('.works-operating').hide();
+		$('.works-marketing').hide();
+	})
+	
 	//---技能表
 	$('.group-wrap .group4, #tech').on('click', function() {
 		$('.popup-wrap .tech-part').fadeIn(500).siblings('div').hide();
