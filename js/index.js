@@ -43,24 +43,31 @@ $(function($){
 		$('.popup-wrap .id-position').fadeIn(500).siblings('div').hide();
 		$('.sub-nav.id-sub').fadeIn(500);
 	})
-	
-	$('.sub-nav ul').find('li').hover(function() {
-		$(this).stop().animate({'opacity': '1'},100).siblings('li').animate({'opacity': '.3'},100)
-	})
+	//-----导航明暗效果
+//	$('.sub-nav ul').find('li').hover(function() {
+//		$(this).stop().animate({'opacity': '1'},100).siblings('li').stop().animate({'opacity': '.3'},100)
+//	}, function() {
+//		$(this).animate({'opacity': '.3'},100);
+//	}).click(function() {
+//		$(this).css('opacity','1');
+//	})
 	$('.sub-nav .environment3').on('click', function() {
 		$('.id-environment').fadeIn(500);
 		$('.id-member').hide();
 		$('.id-position').hide();
+		$(this).addClass('opacity').siblings('li').removeClass('opacity');
 	})
 	$('.sub-nav .member3').on('click', function() {
 		$('.id-member').fadeIn(500);
 		$('.id-environment').hide();
 		$('.id-position').hide();
+		$(this).addClass('opacity').siblings('li').removeClass('opacity');
 	})
 	$('.sub-nav .position3').on('click', function() {
 		$('.id-position').fadeIn(500);
 		$('.id-member').hide();
 		$('.id-environment').hide();
+		$(this).addClass('opacity').siblings('li').removeClass('opacity');
 	})
 	
 	//---朋友圈

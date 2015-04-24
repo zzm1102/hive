@@ -206,10 +206,12 @@ html, body { background-color: #000; height: 100%; font-family: "microsoft yahei
 .popup-wrap.white {background-color: #fff;}
 
 .popup-wrap .sub-nav { position: absolute; top: -215px; left: -180px; z-index: 3;}
-.popup-wrap .sub-nav ul li {position: absolute; cursor: pointer;}
+.popup-wrap .sub-nav ul li {position: absolute; cursor: pointer; opacity: .3;}
+.popup-wrap .sub-nav ul li:hover {opacity: 1;}
 .popup-wrap .sub-nav ul li.environment3 {left: 87px; top: 173px;}
 .popup-wrap .sub-nav ul li.member3 {left: 145px; top: 50px;}
 .popup-wrap .sub-nav ul li.position3 {right: 95px; top: 70px;}
+.popup-wrap .sub-nav ul li.opacity {opacity: 1;}
 
 .popup-wrap .sub-nav.client-sub {top: -270px; left: -340px; }
 .popup-wrap .sub-nav.works-sub {top: -235px; left: -250px; }
@@ -230,14 +232,14 @@ html, body { background-color: #000; height: 100%; font-family: "microsoft yahei
 .popup-wrap .tech-sub ul li.menhu {top: 357px; left: 9px;}
 .popup-wrap .tech-sub ul li.zimeiti {top: 246px; left: 212px;}
 
-.popup-wrap .close-btn {width: 61px; height: 52px; position: absolute; top: -25px; right: -5px; cursor: pointer; z-index: 3;}
-.popup-wrap #sub-title {width: 100%; position: absolute; top: -140px; text-align: center; }
-.popup-wrap #sub-title i {background: url(../img/sub_title.png) no-repeat; width: 150px; height: 77px; margin: 0 auto;}
-.popup-wrap #sub-title.about i {background-position: 0 0; display: block;}
-.popup-wrap #sub-title.client i {background-position: 0 -254px; display: block;}
-.popup-wrap #sub-title.works i {background-position: -1px -344px; display: block;}
-.popup-wrap #sub-title.technique i {background-position: 0 -84px; display: block;}
-.popup-wrap #sub-title.contact i {background-position: 0 -167px; display: block;}
+.popup-wrap .close-btn {width: 61px; height: 52px; position: absolute; top: -25px; right: -5px; cursor: pointer; z-index: 12;}
+ #sub-title {width: 500px; position: absolute; top: 5%; text-align: center; left: 50%; margin-left: -250px; z-index: 11; }
+ #sub-title i {background: url(../img/sub_title.png) no-repeat; width: 150px; height: 77px; margin: 0 auto;}
+ #sub-title.about i {background-position: 0 0; display: block;}
+ #sub-title.client i {background-position: 0 -254px; display: block;}
+ #sub-title.works i {background-position: -1px -344px; display: block;}
+ #sub-title.technique i {background-position: 0 -84px; display: block;}
+ #sub-title.contact i {background-position: 0 -167px; display: block;}
 
 .popup-wrap .id-part {margin: 85px 50px;}
 .popup-wrap .id-part h3 {background: url(../img/third_nav.png) no-repeat; width: 145px; height: 35px;}
@@ -442,11 +444,11 @@ html, body { background-color: #000; height: 100%; font-family: "microsoft yahei
 @-webkit-keyframes scaleChange {
 	0% {-webkit-transform: scale(0); opacity: 0;}
 	/*50% {-webkit-transform: scale(0); opacity: 0;}*/
-	40% {-webkit-transform: scale(.7); opacity: 1;}
-	55% {-webkit-transform: scale(.4); opacity: .6;}
+	/*40% {-webkit-transform: scale(.7); opacity: 1;}*/
+	75% {-webkit-transform: scale(1.3); opacity: 1;}
 	/*80% {-webkit-transform: scale(.8); opacity: 1;}*/
 	/*70% {-webkit-transform: scale(.3); opacity: .6;}*/
-	/*90% {-webkit-transform: scale(1.3); opacity: 1;}*/
+	90% {-webkit-transform: scale(.9); opacity: 1;}
 	100% {-webkit-transform: scale(1); opacity: 1;}
 }
 
