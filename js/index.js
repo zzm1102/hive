@@ -1,4 +1,12 @@
 $(function($){
+	//resize
+	$(window).bind("resize",function(){
+				var dfw=1920;
+				var wh=$(window).width();
+				var sc=wh/dfw;
+				document.body.style.zoom = sc;
+			})
+	
 	//	图片展示区
 	var mySwiper = new Swiper('.swiper-container',{
 	    pagination: '.pagination',
@@ -110,5 +118,7 @@ $(function($){
 		$('.popup-wrap .contact-part').fadeIn(500).siblings('div').hide();
 		$('.sub-nav.contact-sub').fadeIn(500);
 	})
+	
+	
 	
 }(jQuery));
