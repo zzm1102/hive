@@ -43,12 +43,12 @@ html, body { background-color: #000; height: 100%; font-family: "microsoft yahei
 /*动画部分设置*/
 .wrap .container ul, .wrap nav ul, .wrap .bg-deco, footer {display: none;}
 .logoRotate {
-	-webkit-animation: logoRotate 2s linear infinite; 
-	animation: logoRotate 2s linear infinite;
+	-webkit-animation: logoRotate 2s linear 2; 
+	animation: logoRotate 2s linear 2;
 }
 
 /*login*/
-.container .login {position: absolute; right: -230px; top: -20px; }
+.container .login {position: absolute; right: -230px; top: -40px; }
 .container .login ul li {display: block; text-align: center;}
 .container .login ul a { background: url(../img/login.png) no-repeat; display: block; text-align: center; margin: 10px auto; float: left;}
 .container .login ul .weibo {background-position: -3px 0; width: 34px; height: 26px;}
